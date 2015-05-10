@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  
+  root 'frontend/overview#index'
+  
+  match 'login' => "account/user_sessions#login", via: :all
+  
+  namespace :frontend do
+  end
+  
+  namespace :backyard do 
+    root 'overview#index'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
