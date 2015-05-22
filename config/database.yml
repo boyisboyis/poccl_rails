@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: poccl_production
-  username: poccl
-  password: <%= ENV['POCCL_DATABASE_PASSWORD'] %>
+  username: boyisboyis
+  password: 

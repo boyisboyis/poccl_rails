@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poccl</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'account/login', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="login-wrapper">
+   <div class="login-wrap-content">
+     <div class='login-main-block' style="">
+       <h1>PO / Contract Check Lists</h1>
+       <div>
+         <input type="text" id="username" name="username" placeholder="Username" />
+         <input type="password" id="password" name="password" placeholder="Password" />
+         <p id="warning" class="bg-danger" style="display: none;">ERROR.</p>
+       </div>
+       <button>Sign In</button>
+     </div>
+   </div>
+  </div>
+</body>
+</html>
